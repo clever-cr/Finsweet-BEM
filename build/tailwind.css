@@ -535,7 +535,7 @@ body {
   color: rgb(29 33 48 / var(--tw-text-opacity));
 }
 
-.header__btn,  .conversion__content-btn, .pricing__btn,  .sales__content-btn{
+.header__btn,  .conversion__content-btn, .pricing__btn,  .sales__content-btn,  .footer__btn{
   border-radius: 0.75rem;
   --tw-bg-opacity: 1;
   background-color: rgb(29 33 48 / var(--tw-bg-opacity));
@@ -637,7 +637,7 @@ body {
   width: 622px;
 }
 
-.btn--white{
+.footer__btn--white{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;

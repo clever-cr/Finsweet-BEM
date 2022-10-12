@@ -19,7 +19,7 @@
     @apply font-normal text-base text-primary;
   }
 
-  .header__btn, .conversion__content-btn,.pricing__btn, .sales__content-btn {
+  .header__btn, .conversion__content-btn,.pricing__btn, .sales__content-btn, .footer__btn {
     @apply bg-primary rounded-xl py-[16px] px-[40px] text-white font-bold text-base text-center;
   }
   .header__btn--input {
@@ -59,7 +59,7 @@
     @apply w-[622px];
   }
  
-  .btn--white {
+  .footer__btn--white {
     @apply bg-white text-primary;
   }
   .content, .pricing__content {
