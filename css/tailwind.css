@@ -9,115 +9,129 @@
     font-family: "Roboto", sans-serif;
   }
 
-  .navbar {
+  .header__navbar {
     @apply flex flex-row items-center justify-between px-32 py-[8px];
   }
-  .navbar__links {
+  .header__navbar-links {
     @apply space-x-9;
   }
-  .navbar__link {
-    @apply font-normal text-base text-[#1D2130];
+  .header__navbar-link {
+    @apply font-normal text-base text-primary;
   }
 
-  .btn {
-    @apply bg-[#1D2130] rounded-xl py-[16px] px-[40px] text-white font-bold text-base text-center;
+  .header__btn, .conversion__content-btn,.pricing__btn {
+    @apply bg-primary rounded-xl py-[16px] px-[40px] text-white font-bold text-base text-center;
   }
-  .btn--normal {
-    @apply bg-white ring-[#E0E4FC];
-  }
-  .btn--large {
-    @apply w-[622px];
-  }
-  .btn--input {
+  .header__btn--input {
     @apply flex-shrink-0;
-  }
-  .btn--white {
-    @apply bg-white text-[#1D2130];
-  }
-  .content {
-    @apply space-y-2;
   }
   .header__content {
     @apply flex flex-col items-center space-y-8 py-28 bg-[url('/img/gradient2.png')];
   }
-  .content__input {
+  .header__content-input {
     @apply flex  rounded-[20px] w-[576px]  bg-white overflow-hidden py-2 pr-2 pl-6;
   }
 
-  .content__input-search {
+  .header__content-inputsearch {
     @apply w-full  outline-none;
   }
-  .content__img {
+  .header__content-img {
     @apply py-14;
   }
 
-  .description {
+  .header__description,.discover-more__description,.discover-more__content-description,.conversion__content-description, .features__card-description {
     @apply max-w-[576px]   text-[16px] text-left
   font-normal;
   }
-  .description--big {
+  .header__description--big,.pricing__content-description--big {
     @apply text-lg text-center max-w-[768px];
   }
-
-  .highlight {
-    @apply font-bold text-2xl leading-[29px] w-fit bg-gradient-to-r from-[#373FFF] to-[#3ACAF8] text-transparent bg-clip-text;
+  .header__content-title,.discover-more__title,.discover-more__content-title ,.conversion__content-title, .features__card-title,.testimonials__title,.pricing__content-title {
+    @apply font-bold max-w-[567px] text-center text-5xl text-primary;
   }
-  .highlight--big {
+  .header__content-title--big {
+    @apply max-w-[768px] text-[56px];
+  }
+  .btn--normal {
+    @apply bg-white ring-secondary;
+  }
+  .btn--large {
+    @apply w-[622px];
+  }
+ 
+  .btn--white {
+    @apply bg-white text-primary;
+  }
+  .content, .pricing__content {
+    @apply space-y-2;
+  }
+ 
+
+ 
+  .highlight--big,.discover-more__highlight--big {
     @apply w-[325px];
   }
   .title {
-    @apply font-bold max-w-[567px] text-center text-5xl text-[#1D2130];
+    @apply font-bold max-w-[567px] text-center text-5xl text-primary;
   }
-  .title--big {
+  .title--big, .pricing__content-title--big {
     @apply max-w-[768px] text-[56px];
   }
-  .title--md {
+  .title--md, .testimonials__title--md {
     @apply max-w-[628px];
   }
-  .title--left {
+  .title--left,.discover-more__title--left,.conversion__content-title--left {
     @apply text-left;
   }
 
-  .title--small {
+  .title--small, .features__card-title--small {
     @apply max-w-[362px] text-3xl text-left;
   }
-  .title--right {
+  .title--right,.discover-more__content-title--right {
     @apply text-2xl text-left;
   }
 
-  .solution-section {
+  .solution-section, .features {
     @apply flex flex-col items-center space-y-12;
   }
-  .selection-section__cards {
-    @apply bg-[#E0E4FC]   rounded-[24px] p-12 flex   items-center gap-8;
+  .solution-section__cards, .features__cards {
+    @apply bg-secondary   rounded-[24px] p-12 flex   items-center gap-8;
   }
 
-  .selection-section__cards--normal {
-    @apply bg-[#D798E1] bg-opacity-[15%];
+  .solution-section__cards--normal, .features__cards--normal {
+    @apply bg-light bg-opacity-[15%];
   }
-  .selection-section__cards-row {
+  .solution-section__cards-row {
     @apply flex flex-row bg-black;
   }
-  .selection-section__card {
+  .solution-section__card,.features__card {
     @apply space-y-6 w-[362px] border-r-2;
   }
-  .selection-section__card--last {
+  .solution-section__card--last {
     @apply border-none;
   }
-  .why-us {
+  .solution-section__title{
+    @apply header__content-title max-w-[362px] text-3xl text-left;
+  }
+  
+  .solution-section__highlight,.discover-more__highlight {
+    @apply font-bold text-2xl leading-[29px] w-fit bg-gradient-to-r from-from to-to text-transparent bg-clip-text;
+  }
+
+  .why-us,.discover-more {
     @apply flex flex-row py-24 px-20;
   }
-  .why-us__col {
+  .why-us__col,.discover-more__col {
     @apply space-y-8;
   }
-  .why-us__description {
+  .why-us__description,.discover-more__content-info {
     @apply flex items-center space-x-8;
   }
-  .why-us__content {
+  .why-us__content,.discover-more__content {
     @apply space-y-8 text-center;
   }
   .conversion {
-    @apply flex bg-[#E0E4FC] py-24 px-28 h-[563px] gap-52;
+    @apply flex bg-secondary py-24 px-28 h-[563px] gap-52;
   }
 
   .conversion--reverse {
@@ -140,10 +154,10 @@
     @apply flex space-x-10;
   }
   .testimonial__card-description {
-    @apply font-semibold text-lg text-center text-[#1D2130] max-w-[283px];
+    @apply font-semibold text-lg text-center text-primary max-w-[283px];
   }
   .testimonial__card-name {
-    @apply font-medium text-xl  text-[#1D2130];
+    @apply font-medium text-xl  text-primary;
   }
   .testimonial__card-status {
     @apply font-normal text-sm;
