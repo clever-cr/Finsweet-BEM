@@ -19,7 +19,7 @@
     @apply font-normal text-base text-primary;
   }
 
-  .header__btn, .conversion__content-btn,.pricing__btn {
+  .header__btn, .conversion__content-btn,.pricing__btn, .sales__content-btn {
     @apply bg-primary rounded-xl py-[16px] px-[40px] text-white font-bold text-base text-center;
   }
   .header__btn--input {
@@ -39,20 +39,20 @@
     @apply py-14;
   }
 
-  .header__description,.discover-more__description,.discover-more__content-description,.conversion__content-description, .features__card-description {
+  .header__description,.discover-more__description,.discover-more__content-description,.conversion__content-description, .features__card-description, .sales__content-description, .services__card-description, .why-us__content-description, .why-us__content-description {
     @apply max-w-[576px]   text-[16px] text-left
   font-normal;
   }
   .header__description--big,.pricing__content-description--big {
     @apply text-lg text-center max-w-[768px];
   }
-  .header__content-title,.discover-more__title,.discover-more__content-title ,.conversion__content-title, .features__card-title,.testimonials__title,.pricing__content-title {
+  .header__content-title,.discover-more__title,.discover-more__content-title ,.conversion__content-title, .features__card-title,.testimonials__title,.pricing__content-title, .sales__content-title, .services__title, .marketing-section__content-title, .why-us__title  {
     @apply font-bold max-w-[567px] text-center text-5xl text-primary;
   }
   .header__content-title--big {
     @apply max-w-[768px] text-[56px];
   }
-  .btn--normal {
+  .btn--normal,.sales__content-btn--normal {
     @apply bg-white ring-secondary;
   }
   .btn--large {
@@ -68,26 +68,24 @@
  
 
  
-  .highlight--big,.discover-more__highlight--big {
+  .highlight--big,.discover-more__highlight--big, .marketing-section__content-highlight--big, .why-us__highlight--big {
     @apply w-[325px];
   }
-  .title {
-    @apply font-bold max-w-[567px] text-center text-5xl text-primary;
-  }
-  .title--big, .pricing__content-title--big {
+ 
+   .pricing__content-title--big {
     @apply max-w-[768px] text-[56px];
   }
-  .title--md, .testimonials__title--md {
+ .testimonials__title--md {
     @apply max-w-[628px];
   }
-  .title--left,.discover-more__title--left,.conversion__content-title--left {
+ .discover-more__title--left,.conversion__content-title--left, .sales__content-title--left, .why-us__title--left {
     @apply text-left;
   }
 
-  .title--small, .features__card-title--small {
+  .features__card-title--small, .services__card-title {
     @apply max-w-[362px] text-3xl text-left;
   }
-  .title--right,.discover-more__content-title--right {
+.discover-more__content-title--right {
     @apply text-2xl text-left;
   }
 
@@ -104,17 +102,17 @@
   .solution-section__cards-row {
     @apply flex flex-row bg-black;
   }
-  .solution-section__card,.features__card {
+  .solution-section__card,.features__card,.services__card {
     @apply space-y-6 w-[362px] border-r-2;
   }
-  .solution-section__card--last {
+  .solution-section__card--last,.services__card--last {
     @apply border-none;
   }
   .solution-section__title{
     @apply header__content-title max-w-[362px] text-3xl text-left;
   }
   
-  .solution-section__highlight,.discover-more__highlight {
+  .solution-section__highlight,.discover-more__highlight, .why-us__highlight  {
     @apply font-bold text-2xl leading-[29px] w-fit bg-gradient-to-r from-from to-to text-transparent bg-clip-text;
   }
 
@@ -124,23 +122,23 @@
   .why-us__col,.discover-more__col {
     @apply space-y-8;
   }
-  .why-us__description,.discover-more__content-info {
+  .discover-more__content-info, .why-us__content-info {
     @apply flex items-center space-x-8;
   }
   .why-us__content,.discover-more__content {
     @apply space-y-8 text-center;
   }
-  .conversion {
+  .conversion,.sales, .marketing-section {
     @apply flex bg-secondary py-24 px-28 h-[563px] gap-52;
   }
 
   .conversion--reverse {
     @apply flex-row-reverse  gap-64;
   }
-  .conversion--white {
+  .conversion--white,.marketing-section--white {
     @apply bg-white;
   }
-  .conversion__content {
+  .conversion__content, .marketing-section__content {
     @apply space-y-7 py-20;
   }
   .logo {
@@ -196,7 +194,7 @@
   .services__cards {
     @apply grid grid-cols-3 gap-8 px-[80px] py-[96px] bg-white bg-opacity-60 rounded-tr-[67px] mr-24 ml-0;
   }
-  .content__title--lg {
+  .content__title--lg,.services__title-lg {
     @apply max-w-[768px];
   }
   .footer__text {

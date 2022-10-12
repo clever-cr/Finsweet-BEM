@@ -535,7 +535,7 @@ body {
   color: rgb(29 33 48 / var(--tw-text-opacity));
 }
 
-.header__btn,  .conversion__content-btn, .pricing__btn{
+.header__btn,  .conversion__content-btn, .pricing__btn,  .sales__content-btn{
   border-radius: 0.75rem;
   --tw-bg-opacity: 1;
   background-color: rgb(29 33 48 / var(--tw-bg-opacity));
@@ -597,7 +597,7 @@ body {
   padding-bottom: 3.5rem;
 }
 
-.header__description, .discover-more__description, .discover-more__content-description, .conversion__content-description,  .features__card-description{
+.header__description, .discover-more__description, .discover-more__content-description, .conversion__content-description,  .features__card-description,  .sales__content-description,  .services__card-description,  .why-us__content-description,  .why-us__content-description{
   max-width: 576px;
   text-align: left;
   font-size: 16px;
@@ -611,7 +611,7 @@ body {
   line-height: 1.75rem;
 }
 
-.header__content-title, .discover-more__title, .discover-more__content-title , .conversion__content-title,  .features__card-title, .testimonials__title, .pricing__content-title{
+.header__content-title, .discover-more__title, .discover-more__content-title , .conversion__content-title,  .features__card-title, .testimonials__title, .pricing__content-title,  .sales__content-title,  .services__title,  .marketing-section__content-title,  .why-us__title{
   max-width: 567px;
   text-align: center;
   font-size: 3rem;
@@ -626,7 +626,7 @@ body {
   font-size: 56px;
 }
 
-.btn--normal{
+.btn--normal, .sales__content-btn--normal{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
   --tw-ring-opacity: 1;
@@ -650,41 +650,31 @@ body {
   margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
 }
 
-.highlight--big, .discover-more__highlight--big{
+.highlight--big, .discover-more__highlight--big,  .marketing-section__content-highlight--big,  .why-us__highlight--big{
   width: 325px;
 }
 
-.title{
-  max-width: 567px;
-  text-align: center;
-  font-size: 3rem;
-  line-height: 1;
-  font-weight: 700;
-  --tw-text-opacity: 1;
-  color: rgb(29 33 48 / var(--tw-text-opacity));
-}
-
-.title--big,  .pricing__content-title--big{
+.pricing__content-title--big{
   max-width: 768px;
   font-size: 56px;
 }
 
-.title--md,  .testimonials__title--md{
+.testimonials__title--md{
   max-width: 628px;
 }
 
-.title--left, .discover-more__title--left, .conversion__content-title--left{
+.discover-more__title--left, .conversion__content-title--left,  .sales__content-title--left,  .why-us__title--left{
   text-align: left;
 }
 
-.title--small,  .features__card-title--small{
+.features__card-title--small,  .services__card-title{
   max-width: 362px;
   text-align: left;
   font-size: 1.875rem;
   line-height: 2.25rem;
 }
 
-.title--right, .discover-more__content-title--right{
+.discover-more__content-title--right{
   text-align: left;
   font-size: 1.5rem;
   line-height: 2rem;
@@ -718,18 +708,22 @@ body {
   --tw-bg-opacity: 15%;
 }
 
-.solution-section__card, .features__card{
+.solution-section__card, .features__card, .services__card{
   width: 362px;
 }
 
-.solution-section__card > :not([hidden]) ~ :not([hidden]), .features__card > :not([hidden]) ~ :not([hidden]){
+.solution-section__card > :not([hidden]) ~ :not([hidden]), .features__card > :not([hidden]) ~ :not([hidden]), .services__card > :not([hidden]) ~ :not([hidden]){
   --tw-space-y-reverse: 0;
   margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
 }
 
-.solution-section__card, .features__card{
+.solution-section__card, .features__card, .services__card{
   border-right-width: 2px;
+}
+
+.solution-section__card--last, .services__card--last{
+  border-style: none;
 }
 
 .solution-section__title{
@@ -744,7 +738,7 @@ body {
   line-height: 2.25rem;
 }
 
-.solution-section__highlight, .discover-more__highlight{
+.solution-section__highlight, .discover-more__highlight,  .why-us__highlight{
   width: -moz-fit-content;
   width: fit-content;
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
@@ -776,12 +770,12 @@ body {
   margin-bottom: calc(2rem * var(--tw-space-y-reverse));
 }
 
-.why-us__description, .discover-more__content-info{
+.discover-more__content-info,  .why-us__content-info{
   display: flex;
   align-items: center;
 }
 
-.why-us__description > :not([hidden]) ~ :not([hidden]), .discover-more__content-info > :not([hidden]) ~ :not([hidden]){
+.discover-more__content-info > :not([hidden]) ~ :not([hidden]),  .why-us__content-info > :not([hidden]) ~ :not([hidden]){
   --tw-space-x-reverse: 0;
   margin-right: calc(2rem * var(--tw-space-x-reverse));
   margin-left: calc(2rem * calc(1 - var(--tw-space-x-reverse)));
@@ -797,7 +791,7 @@ body {
   text-align: center;
 }
 
-.conversion{
+.conversion, .sales,  .marketing-section{
   display: flex;
   height: 563px;
   gap: 13rem;
@@ -814,18 +808,18 @@ body {
   gap: 16rem;
 }
 
-.conversion--white{
+.conversion--white, .marketing-section--white{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.conversion__content > :not([hidden]) ~ :not([hidden]){
+.conversion__content > :not([hidden]) ~ :not([hidden]),  .marketing-section__content > :not([hidden]) ~ :not([hidden]){
   --tw-space-y-reverse: 0;
   margin-top: calc(1.75rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(1.75rem * var(--tw-space-y-reverse));
 }
 
-.conversion__content{
+.conversion__content,  .marketing-section__content{
   padding-top: 5rem;
   padding-bottom: 5rem;
 }
@@ -1032,6 +1026,10 @@ body {
   padding-right: 80px;
   padding-top: 96px;
   padding-bottom: 96px;
+}
+
+.content__title--lg, .services__title-lg{
+  max-width: 768px;
 }
 
 .footer__text{
