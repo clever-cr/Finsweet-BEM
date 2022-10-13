@@ -1,0 +1,341 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  body {
+    font-family: "Roboto", sans-serif;
+  }
+
+  .header__navbar {
+    @apply flex flex-row items-center justify-between px-32 py-[8px];
+  }
+  .header__navbar-links {
+    @apply space-x-9;
+  }
+  .header__navbar-link {
+    @apply font-normal text-base text-primary;
+  }
+
+  .header__btn,
+ .sales__content-btn {
+    @apply bg-primary rounded-xl py-[16px] px-[40px] text-white font-bold text-base text-center;
+  }
+  .header__btn--input {
+    @apply flex-shrink-0;
+  }
+  .header__content {
+    @apply flex flex-col items-center space-y-8 py-28 bg-[url('/img/gradient2.png')];
+  }
+
+  .header__content-img {
+    @apply py-14;
+  }
+  .header__content-title,
+ 
+ 
+  .sales__content-title,
+  .services__title,
+  .marketing-section__content-title {
+    @apply font-bold max-w-[567px] text-center text-5xl text-primary;
+  }
+  .header__content-title--big {
+    @apply max-w-[768px] text-[56px];
+  }
+  .header__description,
+ .sales__content-description,
+  .services__card-description{
+    @apply max-w-[576px]   text-[16px] text-left
+  font-normal;
+  }
+  .header__description--big {
+    @apply text-lg text-center max-w-[768px];
+  }
+
+  .header__content-input {
+    @apply flex  rounded-[20px] w-[576px]  bg-white overflow-hidden py-2 pr-2 pl-6;
+  }
+
+  .header__content-inputsearch {
+    @apply w-full  outline-none;
+  }
+  .btn--normal,
+  .sales__content-btn--normal {
+    @apply bg-white ring-secondary;
+  }
+  .btn--large {
+    @apply w-[622px];
+  }
+
+ 
+  .content {
+    @apply space-y-2;
+  }
+
+  .solution-section {
+    @apply flex flex-col items-center space-y-12;
+  }
+  .solution-section__highlight,
+  .why-us__highlight {
+    @apply font-bold text-2xl leading-[29px] w-fit bg-gradient-to-r from-from to-to text-transparent bg-clip-text;
+  }
+  .solution-section__title {
+    @apply header__content-title max-w-[362px] text-3xl text-left;
+  }
+  .solution-section__cards {
+    @apply bg-secondary   rounded-[24px] p-12 flex   items-center gap-8;
+  }
+
+  .solution-section__cards--normal {
+    @apply bg-light bg-opacity-[15%];
+  }
+  .solution-section__cards-row {
+    @apply flex flex-row bg-black;
+  }
+  .solution-section__card,
+ 
+  .services__card {
+    @apply space-y-6 w-[362px] border-r-2;
+  }
+  .solution-section__card--last,
+  .services__card--last {
+    @apply border-none;
+  }
+
+  .why-us {
+    @apply flex flex-row py-24 px-20;
+  }
+  .why-us__col {
+    @apply space-y-8;
+  }
+  .why-us__highlight {
+    @apply solution-section__highlight w-[325px];
+  }
+  .why-us__title {
+    @apply header__content-title text-left;
+  }
+  .why-us__content {
+    @apply space-y-8 text-center;
+  }
+
+  .why-us__content-info {
+    @apply flex items-center space-x-8;
+  }
+  .why-us__content-description{
+@apply header__description
+  }
+  .conversion,
+  .sales,
+  .marketing-section {
+    @apply flex bg-secondary py-24 px-28 h-[563px] gap-52;
+  }
+
+  .conversion__content,
+  .marketing-section__content {
+    @apply space-y-7 py-20;
+  }
+  .conversion__content-title {
+    @apply header__content-title text-left;
+  }
+  .conversion__content-description {
+    @apply header__description;
+  }
+  .conversion__content-btn {
+    @apply header__btn;
+  }
+  .conversion--reverse {
+    @apply flex-row-reverse  gap-64;
+  }
+  .conversion--white,
+  .marketing-section--white {
+    @apply bg-white;
+  }
+ 
+
+
+  .logo {
+    @apply flex py-12 justify-between px-24;
+  }
+  .discover-more{
+@apply  why-us 
+  }
+  .discover-more__col{
+    @apply why-us__col
+  }
+  .discover-more__highlight{
+@apply solution-section__highlight w-[325px]
+  }
+  .discover-more__title{
+@apply header__content-title text-left;
+  }
+ .discover-more__description{
+  @apply header__description
+ }
+ .discover-more__content{
+@apply why-us__content
+ }
+ .discover-more__content-info{
+  @apply why-us__content-info
+ }
+ .discover-more__content-title {
+@apply header__content-title text-2xl text-left;
+ }
+ .discover-more__content-description{
+@apply header__description
+ }
+.features{
+  @apply solution-section
+}
+.features__title{
+  @apply header__content-title
+}
+.features__cards{
+  @apply solution-section__cards  bg-light bg-opacity-[15%];
+}
+.features__card{
+@apply solution-section__card max-w-[362px] text-3xl text-left;
+}
+
+.features__card-description{
+@apply header__description
+}
+.testimonials {
+  @apply flex flex-col items-center py-24 space-y-16;
+}
+.testimonials__title{
+ @apply header__content-title max-w-[628px];
+}
+.testimonial__cards {
+  @apply flex space-x-10;
+}
+.testimonial__card {
+  @apply w-[411px] h-[404px] border-[2px] flex flex-col items-center justify-center gap-3 rounded-3xl;
+}
+.testimonial__card-description {
+  @apply font-semibold text-lg text-center text-primary max-w-[283px];
+}
+.testimonial__card-name {
+  @apply font-medium text-xl  text-primary;
+}
+.testimonial__card-status {
+  @apply font-normal text-sm;
+}
+ .pricing {
+  @apply flex flex-col items-center space-y-12 pt-24;
+}
+.pricing__content{
+@apply  space-y-2
+}
+.pricing__content-title{
+@apply header__content-title  max-w-[768px] text-[56px];
+}
+.pricing__content-description{
+  @apply header__description text-lg text-center max-w-[768px];
+}
+.pricing__btn{
+  @apply header__btn;
+}
+.footer {
+  @apply bg-[#1D2130]  h-[383px]  px-24 space-y-14 pt-20 mt-24;
+}
+.footer__info {
+  @apply flex items-center justify-between;
+}
+.footer__title {
+  @apply font-semibold text-lg text-white;
+}
+.footer__links {
+  @apply flex flex-col space-y-2 font-normal text-base text-white opacity-60;
+}
+}
+.footer__form {
+  @apply space-y-4;
+}
+.footer__news {
+  @apply font-semibold text-white text-lg;
+}
+
+.footer__input {
+  @apply bg-[#2B2E3C] rounded-lg w-[290px] h-[56px] outline-none;
+}
+.footer__copyright {
+  @apply flex items-center justify-center space-x-10;
+}
+
+.footer__text {
+  @apply text-white;
+}
+.footer__btn{
+@apply header__btn  bg-white text-primary;
+}
+
+
+  .sales__content-title--left{
+    @apply text-left;
+  }
+
+  .highlight--big,
+  .marketing-section__content-highlight--big {
+    @apply w-[325px];
+  }
+
+ 
+  
+  
+
+
+  .services__card-title {
+    @apply max-w-[362px] text-3xl text-left;
+  }
+  
+
+ 
+ 
+ 
+  .services {
+    @apply flex flex-col space-y-24 items-center pt-12 bg-[url('/img/BlurGradient.png')] bg-cover;
+  }
+  .services__cards {
+    @apply grid grid-cols-3 gap-8 px-[80px] py-[96px] bg-white bg-opacity-60 rounded-tr-[67px] mr-24 ml-0;
+  }
+  .content__title--lg,
+  .services__title-lg {
+    @apply max-w-[768px];
+  }
+ 
+  .contact {
+    @apply flex flex-col items-center gap-16;
+  }
+  .contact__input {
+    @apply rounded-lg bg-white   outline-none  py-5 px-6;
+  }
+  .contact__input--medium {
+    @apply col-span-2;
+  }
+  .contact__input--large {
+    @apply h-[148px] col-span-2;
+  }
+  .contact-form {
+    @apply grid grid-cols-[repeat(2,303px)] gap-4;
+  }
+  .contact-content {
+    @apply bg-[#F0F2FE] p-16 space-y-6 grid grid-cols-2 space-x-48 rounded-3xl;
+  }
+  .contact-content__info {
+    @apply py-14;
+  }
+  .contact-content__input {
+    @apply space-y-4;
+  }
+
+  .images {
+    @apply flex gap-6;
+  }
+  .about-header {
+    @apply flex flex-col items-center space-y-6;
+  }
+  .about-us {
+    @apply flex flex-col items-center space-y-6 py-32;
+  }
