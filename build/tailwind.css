@@ -803,11 +803,6 @@ body {
   padding-right: 7rem;
 }
 
-.conversion--reverse{
-  flex-direction: row-reverse;
-  gap: 16rem;
-}
-
 .conversion--white, .marketing-section--white{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
